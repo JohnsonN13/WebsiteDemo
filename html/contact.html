@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Page contact- Demo site AKAO</title>
+		<link rel="shortcut icon" type="image/png" href="../images/logo/akao_logo_free.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Nicolas Bourdon" />
+
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="../css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="../css/icomoon.css">
+		<!-- Simple Line Icons -->
+		<link rel="stylesheet" href="../css/simple-line-icons.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<!-- Style -->
+		<link rel="stylesheet" href="../css/style.css">
+
+		<!-- Modernizr JS -->
+		<script src="../js/modernizr-2.6.2.min.js"></script>
+
+		<!-- Google Map -->
+		<script src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0o7jjM7d8V7QXI4JZOex1cN1rYn152KI &sensor=false"></script>
+		<script src="../js/google_map.js"></script>
+		
+	</head>
+
+	<body>
+
+		<header class="myheader">
+			<div class="fluid-container">
+				<nav class="navbar-default">
+					<div class="navbar-header">
+						<a href="#" class="js-nav-toggle nav-toggle" 
+						data-toggle="collapse" data-target="#navbar" 
+						aria-expanded="false" 
+						aria-controls="navbar"><i></i></a>
+						<a class="navbar-brand" href="../index.html">AKAOLIFE</a> 
+					</div>
+					<!-- id="navbar" permet le scroll de la nav et le menu mobile a check-->
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="../index.html"><span>Accueil</span></a></li>
+							<li><a href="e-lliko.html"><span>Solution e-lliko</span></a></li>
+							<li><a href="e-fakto.html"><span>Solution e-fakto</span></a></li>
+							<li><a href="carrieres.html"><span>Nous rejoindre</span></a></li>
+							<li class="active"><a href="contact.html"><span>Nous contacter</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			  </div>
+		</header>
+	
+		<section class="home">
+			<div class="container">
+				<div class="text-wrap">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center"> 
+							<img src="../images/logo/akao_logo_free.png" class="to-animate"/>
+							<div class="row">
+								<h3 class="to-animate text-home">
+									A votre service depuis plus de 15 ans !
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="info-section">
+			<div class="infos">
+				<div class="grid">
+					<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.967879977634!2d3.507362615893822!3d50.36715340124419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2edcdfcfefa03%3A0xf21eefd56d0e88f1!2s22%20Avenue%20Anatole%20France%2C%2059410%20Anzin!5e0!3m2!1sfr!2sfr!4v1614072409679!5m2!1sfr!2sfr" 
+						style="border:0;" allowfullscreen="" loading="lazy">
+					</iframe> 
+				</div>
+				<div class="grid">
+					<div class="grid-info">
+						<h2>Akaolife</h2>
+						<div class="row">
+							<div>
+								<div class="align-info">
+									<i class="icon-home"></i>
+									<div class="textinfo">
+										<h3>Adresse AKAOLIFE :</h3>
+										<p>BP 10 284</br>
+										59306 VALENCIENNES Cedex</p>
+									</div>
+								</div>
+								<div class="align-info">
+									<i class="icon-phone"></i> 
+									<div class="textinfo">
+										<h3>Téléphone AKAOLIFE</h3>
+										<p>Vous pouvez les contacter au :</br>
+										T. 03 27 202 222</p>
+									</div>
+								</div>
+								<div class="align-info">
+									<i class="icon-envelope"></i> 
+									<div class="textinfo">
+										<p>Email : contact@akao.fr</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="myform">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8">
+						<div class="section-heading text-center">
+							<h2><span>Contacter nous</span></h2>
+							<p>N'hésitez pas à laisser un message, une réponse arrivera sous les 24h. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-offset-1 col-md-10">
+						<form class="form-horizontal" role="form" style="margin-bottom: 50px;">
+							
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-8">
+									<input type="text" class="form-control" id="inputName" placeholder="Name">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-8">
+									<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-8">
+									<input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-8">
+									<textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-8">
+									<button type="button" class="btn btn-theme btn-lg btn-block">Send message</button>
+								</div>
+							</div>
+						</form>
+					</div>  
+				</div>
+			</div>
+		</section>  
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+						Démo faite par <a href="https://www.linkedin.com/in/nicolas-bourdon-2a823515b/" target="_blank">Nicolas Bourdon</a>
+						</p>
+					</div>
+				</div>		
+			</div>	
+		</footer>
+
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="../js/jquery.stellar.min.js"></script>
+
+	<script src="../js/main.js"></script>
+    <script type="text/javascript"></script>
+
+	</body>
+</html>
