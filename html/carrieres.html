@@ -24,141 +24,169 @@
 
 	<body>
 
-		<header class="myheader">
-			<div class="fluid-container">
-				<nav class="navbar-default">
-					<div class="navbar-header">
-						<a href="#" class="js-nav-toggle nav-toggle" 
-						data-toggle="collapse" data-target="#navbar" 
-						aria-expanded="false" 
-						aria-controls="navbar"><i></i></a>
-						<a class="navbar-brand" href="../index.html">AKAOLIFE</a> 
+		<header>
+			<div class="overlay"></div>
+			<div class="menu2">
+				<ul>
+					<li class="active">
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="#solutions"> Solutions </a>
+					</li>
+					<li>
+						<a href="html/carrieres.html">Rejoindre</a>
+					</li>
+					<li>
+						<a href="html/contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="myheader">
+				<div class="container2">
+					<div class="buttonMenu">
+						<span></span>
 					</div>
-					<!-- id="navbar" permet le scroll de la nav et le menu mobile a check-->
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="../index.html"><span>Accueil</span></a></li>
-							<li><a href="e-lliko.html"><span>Solution e-lliko</span></a></li>
-							<li><a href="e-fakto.html"><span>Solution e-fakto</span></a></li>
-							<li class="active"><a href="carrieres.html"><span>Nous rejoindre</span></a></li>
-							<li><a href="contact.html"><span>Nous contacter</span></a></li>
+					<div class="menu">
+						<ul>
+							<li>
+								<a href="../index.html">Accueil</a>
+							</li>
+							<li>
+								<a href="../index.html#solutions"> Solutions </a>
+							</li>
 						</ul>
 					</div>
-				</nav>
-			  </div>
+					<div class="logo" style="background-image: url(../images/logo/logoAkao.png)">
+					</div>
+					<div class="menu">
+						<ul>
+							<li class="active">
+								<a href="carrieres.html">Rejoindre</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<section class="home">
-			<div class="container">
-				<div class="text-wrap">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center"> 
-							<img src="../images/logo/akao_logo_free.png" class="to-animate"/>
-							<div class="row">
-								<h3 class="to-animate text-home">
-									A votre service depuis plus de 15 ans !
-								</h3>
-							</div>
-						</div>
+			<div class="onBan">
+				<div class="container">
+					<div class="logo">
+						<img src="../images/logo/logoAkao.png" class="to-animate"/>
+					</div>
+					<div class="textOnBan">
+						A votre service depuis plus de 15 ans.
 					</div>
 				</div>
 			</div>
-		</section>	
+		</section>
 
 		<section class="recruit">
-
-			<div class="col-lg-12 height-20px separate text-center">
-				<div>
-					Innovation, passion, partage, donner du sens à notre engagement quotidien au service des entreprises en leur offrant le meilleur de nous même et de nos technologies. 
+			<div class="container2">
+				<div class="divRecruit">
+					<div class="separate text-center">
+						Innovation, passion, partage, donner du sens à notre engagement quotidien au service des entreprises en leur offrant le meilleur de nous même et de nos technologies. 
+						Nous transformons des idées folles en projets, des projets en solutions réalisés en co-construction avec nos clients et nos partenaires. 
+						Voilà le quotidien des équipes d’AKAOLIFE…
 					</br>
-					Nous transformons des idées folles en projets, des projets en solutions réalisés en co-construction avec nos clients et nos partenaires. 
-					</br>
-					Voilà le quotidien des équipes d’AKAOLIFE…A bientôt ?
-				</div>
-				<div class="line-spacer"></div>
-			</div>
-
-			<div class="container col-md-8 col-md-offset-2">
-				<div class="row">
-					<div class="section-heading text-center">
-						<h2><span>Postes</span></h2>	
+						A bientôt ?
+						<div class="line-spacer"></div>
 					</div>
+					
+					<div class="titreBottom"> Nous rejoindre </div>
 
-					<div>
-						<button class="accordion text-center"><h2> Consultant Fonctionnel ERP H / F </h2></button>
-						<div class="panel">
-							<div class="poste">
-								<h3><strong>LE POSTE</strong></h3>
-								<p><strong>Consultant fonctionnel ERP </strong></p>
-								<p><strong>Type de contrat : </strong> CDI </p>
-								<p><strong>Lieu de travail : </strong> Valenciennes</p>
-								<p><strong> Rénumération :  </strong> selon le profil
+					<div class="container" id="menu">
+						
+						<div class="links">
+							<a class="jobLink col-md-6 col-sm-6 col-xs-12" onclick="openPoste(event, 'job1')" id="defaultOpen">Consultant fonctionnel ERP </a>
+							<a class="jobLink col-md-6 col-sm-6 col-xs-12" onclick="openPoste(event, 'job2')">Développeur d'applications PHP  </a>
+							<div class="clearfix"></div>
+						</div>  
+						<div id="job1" class="jobContent">
+							<div class="spec"><span>Type de contrat : </span> CDI </div>
+							<div class="spec"><span>Lieu de travail : </span> Valenciennes</div>
+							<div class="spec"><span> Rénumération :  </span> selon le profil</div>
 
-								<h3><strong>LA MISSION</strong></h3>
-								<p> Vous intégrerez une équipe dynamique qui travaille sur des sujets innovants au service d’une clientèle PME et grands comptes.</p>
-								<p><strong>AKAOLIFE </strong> est éditeur de solutions web et mobile dans le domaine de la gestion documentaire, du processus métier et de la mobilité.
-								<p>Votre mission consistera à piloter des projets de déploiements de nos solutions sur des environnement en lien avec les ERPs standards du marché. (AVANT-VENTE, AUDIT, PARAMETRAGE, TESTS FONCTIONNELS)</p>
-								<p><strong>ERPs </strong> (au moins l’un d’entre eux) :</br>
-									SAGE L100,1000 ,X3</br>
-									MICROSOFT NAV,AX</br>
-									CEGID
-								</p>
-
-								<h3><strong>LE PROFIL</strong></h3>
-								<p><strong>BAC + 2 à BAC+5 </strong> (formation commerciale, gestion ou technique)</p>	
-								
-								<h3><strong>CONTACT</strong></h3>
-								<p>Mr Halitim Abdel : a.halitim@akao.fr</p>
+							<div class="titreBottom">La mission</div>
+							<div class="textJob">
+								<p> Vous intégrerez une équipe dynamique qui travaille sur des sujets innovants au service d’une clientèle PME et grands comptes.
+								<span>Akaolife </span> est éditeur de solutions web et mobile dans le domaine de la gestion documentaire, du processus métier et de la mobilité.
+								Votre mission consistera à piloter des projets de déploiements de nos solutions sur des environnement en lien avec les ERPs standards du marché. (avant-vente, audit, paramêtrage, tests fonctionnels...)</p>
 							</div>
-						</div>
+							<p><span>ERPs </span> (au moins l’un d’entre eux) :</p>
+							<ul>
+								<li>SAGE L100,1000 ,X3</li>
+								<li>MICROSOFT NA</li>
+								<li>CEGID</li>
+							</ul>
 
-						<button class="accordion text-center"><h2>Développeur d'applications H / F</h2></button>
-						<div class="panel">
-							<div class="poste">
-								<h3><strong>LE POSTE</strong></h3>
-								<p><strong>Développeur d'applications PHP </strong></p>
-								<p><strong>Type de contrat : </strong> CDI </p>
-								<p><strong>Lieu de travail :  </strong> Valenciennes</p>
-								<p><strong>Rémuneration : </strong> selon profil</p>
-				
-				
-								<h3><strong>LA MISSION</strong></h3>
-								<p>Vous intégrerez une équipe dynamique qui travaille sur des sujets innovants au service d'une clientèle PME et grands comptes.</p>
-								<p><strong>AKAOLIFE </strong> est éditeur de solutions web et mobile dans le domaine de la gestion documentaire, du processus métier et de la mobilité.</p>
-								<p>Votre mission consistera à mettre en œuvre des fonctionnalités innovantes au sein d'une application déjà utilisée par plusieurs centaines de comptes sur l'ensemble du territoire national.</p>
-								<p><strong> Langages :</strong></p>
-								<p>PHP (obligatoire)</br>
-								JAVASCRIPT (obligatoire)</br>
-								FRAMEWORK SYMFONY (souhaité)</br>
-								SQL : Maitrise langage, requête, optimisation (obligatoire)
-								</p>
-
-								<h3><strong>LE PROFIL</strong></h3>
-								<p><strong>BAC + 2 à BAC+5 expérience souhaitée</strong></p>
-								<p>Vous aimez découvrir des nouvelles technologies et avez une appétence pour l'innovation.</p>
-				
-								<h3><strong>CONTACT</strong></h3>
-								<p>Mr Halitim Abdel : a.halitim@akao.fr</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+							<div class="titreBottom">Le profil</div>
+							<p><span>BAC + 2 à BAC+5 </span> (formation commerciale, gestion ou technique)</p>	
+							
+							<div class="titreBottom">Contact</div>
+							<p>Mr Halitim Abdel : a.halitim@akao.fr</p>
+						</div>  
+						<div id="job2" class="jobContent">
+							<div class="spec"><span>Type de contrat : </span> CDI </div>
+							<div class="spec"><span>Lieu de travail :  </span> Valenciennes</div>
+							<div class="spec"><span>Rémuneration : </span> selon le profil</div>
 			
+			
+							<div class="titreBottom">La mission</div>
+							<div class="textJob">
+								<p>Vous intégrerez une équipe dynamique qui travaille sur des sujets innovants au service d'une clientèle PME et grands comptes.
+								<span>Akaolife </span> est éditeur de solutions web et mobile dans le domaine de la gestion documentaire, du processus métier et de la mobilité.
+								Votre mission consistera à mettre en œuvre des fonctionnalités innovantes au sein d'une application déjà utilisée par plusieurs centaines de comptes sur l'ensemble du territoire national.</p>
+							</div>
+							<div class="titreBottom"> Langages :</div>
+							<ul>
+								<li>Php (obligatoire)</li>
+								<li>Javascript (obligatoire)</li>
+								<li>Frameword Symphony (souhaité)</li>
+								<li>SQL : Maitrise langage, requête, optimisation (obligatoire)</li>
+							</ul>
+
+							<div class="titreBottom">Le profil</div>
+							<p><span>BAC + 2 à BAC+5 expérience souhaitée</span></p>
+							<p>Vous aimez découvrir des nouvelles technologies et avez une appétence pour l'innovation.</p>
+			
+							<div class="titreBottom">Contact</div>
+							<p>Mr Halitim Abdel : a.halitim@akao.fr</p>
+						</div>  
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<footer>
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<p>
-						Démo faite par <a href="https://www.linkedin.com/in/nicolas-bourdon-2a823515b/" target="_blank">Nicolas Bourdon</a>
-						</p>
-					</div>
-				</div>		
+				<p>Démo faite par <a href="https://www.linkedin.com/in/nicolas-bourdon-2a823515b/" target="_blank">Nicolas Bourdon</a></p>	
 			</div>	
 		</footer>
 
+		<script>
+			function openPoste(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("jobContent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("jobLink");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+			
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
 
 	<!-- jQuery -->
 	<script src="../js/jquery.min.js"></script>
@@ -171,6 +199,8 @@
 
 	<script src="../js/main.js"></script>
     <script type="text/javascript"></script>
+
+
 
 	</body>
 
